@@ -1,0 +1,87 @@
+extends ../main.layout.pug
+
+block content  
+  section.hero
+    .container
+      header.header
+        .header__left
+          socials.socials--color--green
+           ul.socials__list
+              li.socials__item
+                a.socials__link(href='//vk.com', target='_blank')
+                  svg.socials__icon
+                    use(xlink:href='./assets/images/icons/sprite.svg#vk')
+              li.socials__item
+                a.socials__link(href='//github.com', target='_blank')
+                  svg.socials__icon
+                    use(xlink:href='./assets/images/icons/sprite.svg#github')
+              li.socials__item
+                a.socials__link(href='//linkedin.com', target='_blank')
+                  svg.socials__icon
+                    use(xlink:href='./assets/images/icons/sprite.svg#in')
+        .header__right
+          button.menu-hamburger
+            .menu-hamburger__lines
+      .hero__content
+        .section-title.section-title--bg--portfolio
+        .user.hero__user
+          .user__photo(style="background-image: url('./assets/images/photo.jpg');")
+          .user__description
+            .user__title Елена Галанова
+            .user__text Личный сайт веб разработчика
+      a.btn-down.hero__btn
+        svg.btn-down__icon
+          use(xlink:href='./assets/images/icons/sprite.svg#arrow_down')
+  .works__title
+    svg.works_header-title 
+      use(xlink:href='assets/images/icons/sprite.svg#works_header')
+        h1.title-h1.title-h1--about.works МОИ РАБОТЫ
+    .triangles.triangles--about
+      svg.triangle.triangles__left(viewbox='0 0 100 100', preserveaspectratio='none')
+        polygon(points='0 100, 100 100, 0 0')
+      svg.triangle.triangles__right(viewbox='0 0 100 100', preserveaspectratio='none')
+        polygon(points='0,100 100,0 100,100')
+  section.works
+    .works__left
+      .work__left-content
+          .work__left-title
+            h1.title-h1.title-h1--about
+              | САЙТ ШКОЛЫ ОНЛАЙН
+              br
+              |  ОБРАЗОВАНИЯ
+          .work__right-description.text-content
+            p
+              | HTML, CSS, JAVASCRIPT
+            button.btn.btn--view--rounded.green(tabindex='1') Посмотреть сайт
+    .works__right
+
+    .works__down
+      h1.title-h1.title-h1--about ЧТО ОБО МНЕ ГОВОРЯТ
+      .down__right
+        .user__photo(style="background-image: url('./assets/images/2.jpg');")
+        p 
+          |Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+        p.green 
+          |Ковальчук Дмитрий
+        p.italic 
+          |- основатель Loftschool
+      .down__left
+        .user__photo(style="background-image: url('./assets/images/1.jpg');")
+        p 
+          |Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+        p.green  
+          |Сабанцев Владимир
+        p.italic  
+          |- преподаватель
+
+      form.modal-form.modal-form_blured
+        .modal-form__bg
+        .modal-form__title
+          h1.title-h1.title-h1--about Связаться со мной
+        .modal-form__container
+          input(type="text" placeholder="Имя").modal-form__input
+          input(type="text" placeholder="Email").modal-form__input
+          textarea(placeholder="Ваше сообщение").modal-form__input.modal-form__input_textarea
+        .modal-form__buttons
+          button.menu__link(href='#') Отправить
+          button.menu__link(href='#') Очистить
