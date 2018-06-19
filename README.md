@@ -5,9 +5,11 @@
 Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена последняя версия Node.js & NPM
 
 Чтобы развернуть проект необходимо:
+
 $ git clone git@github.com:loftschool/advanced-boilerplate.git
 $ cd advanced-boilerplate
 $ npm install
+
 Скрипты package.json:
 Скрипт	Назначение
 dev:mpa	Разработка основного сайта. Страницы обо мне, блог и т.п. Запустит dev сценарии Gulp.
