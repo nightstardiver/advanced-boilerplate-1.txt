@@ -7,7 +7,6 @@ block scripts
   script(src='about.bundle.js')
 
 block content
-  section.hero
     .container
       header.header
         .header__left
@@ -25,6 +24,7 @@ block content
                 a.socials__link(href='//linkedin.com', target='_blank')
                   svg.socials__icon
                     use(xlink:href='./assets/images/icons/sprite.svg#in')
+    .hero
         .header__right
           button.menu-hamburger
             .menu-hamburger__lines
@@ -62,7 +62,7 @@ block content
     .about__right
       .about__right-content
         .about__right-title
-          .title-h2
+          h2.title-h2
             | ЧЕМ Я МОГУ БЫТЬ
             br
             |  ВАМ ПОЛЕЗНА
@@ -140,7 +140,7 @@ block content
                         circle.skill__circle.skill__circle_under(cx='50', cy='50', r='40')
                         circle.skill__circle.skill__circle_above(cx='50', cy='50', r='40')
                       .skill__title Bower
-  section.map
+  .map
     .google-map
     .map__content
       .contacts
@@ -201,7 +201,6 @@ block content
         .footer-info__col.text-content
           blockquote
             | Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
-            span.text-content__author Martin Golding
+          cite.text-content__author Martin Golding
     .footer__bot
-      .copyright
-        small.copyright__text  Елена Галанова | создано с любовью в Loftschool | 2018
+      .copyright__text Елена Галанова | создано с любовью в Loftschool | 2018
