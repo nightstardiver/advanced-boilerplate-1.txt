@@ -1,5 +1,3 @@
-
-
 .socials__item {
 	display: inline-block;
 	margin: 0 26px 0 0;
@@ -42,6 +40,7 @@
 }
 
 .socials--color--green {
+	text-align: left;
 	.socials__link {
 		&:hover {
 			.socials__icon {
