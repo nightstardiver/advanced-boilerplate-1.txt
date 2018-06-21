@@ -19,12 +19,11 @@
 	align-items: center;
 	height: 36px;
 	background-color: #7ca66a;
-	margin-right: 500px; 
 }
 
 .footer--bg--transparent {
 	height: 36px;
-	margin-top: -36px;
+	margin-top: -250px;
 	background-color: transparent;
 	font-weight: 400;
 	.footer__bot {
@@ -58,7 +57,12 @@
 
 }
 
+.text-content__author{
+	font-style: italic;
+	font-weight: bold;
+}
+
 .copyright__text{
-	margin-left: 720px;
+	text-align: center;
 	
 }
