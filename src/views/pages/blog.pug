@@ -1,10 +1,8 @@
 extends ../main.layout.pug
 
 block content
-    section.hero.hero--blog
       .container
         header.header
-          .header__left
             .socials.socials--color--green
               ul.socials__list
                 li.socials__item
@@ -30,7 +28,7 @@ block content
             .hero__title
               h1.title-h1.title-h1--color--white Блог
             .hero__subtitle Статьи, которые я написала
-    section.blog
+    .blog
       .triangles
         svg.triangle.triangles__left(viewbox='0 0 100 100', preserveaspectratio='none')
           polygon(points='0 100, 100 100, 0 0')
@@ -59,7 +57,7 @@ block content
               p
                 | Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
               p
-              pre.javascript(style='font-family:monospace;').
+              .javascript(style='font-family:monospace;').
                 
               p
           article.articles__item
@@ -73,39 +71,36 @@ block content
                 | Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, насущным потребностям.
     footer.footer
       .footer__top
-        .footer-info
-          .footer-info__col
-            p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
-          .footer-info__col
-            nav.menu.menu--view--transparent.footer-info__menu
-              ul.menu__list
-                li.menu__item
-                  a.menu__link(href='works.html') Мои работы
-                li.menu__item
-                  a.menu__link(href='about.html') Обо мне
-                li.menu__item
-                  a.menu__link(href='blog.html') Блог
-                li.menu__item
-                  a.menu__link(href='auth.html') Авторизация
-          .socials.socials--view--transparent
-              ul.socials__list
-                li.socials__item
-                  a.socials__link(href='//vk.com', target='_blank')
-                    svg.socials__icon
-                      use(xlink:href='./assets/images/icons/sprite.svg#vk')
-                li.socials__item
-                  a.socials__link(href='//github.com', target='_blank')
-                    svg.socials__icon
-                      use(xlink:href='./assets/images/icons/sprite.svg#github')
-                li.socials__item
-                  a.socials__link(href='//linkedin.com', target='_blank')
-                    svg.socials__icon
-                      use(xlink:href='./assets/images/icons/sprite.svg#in')
-          .footer-info__col.text-content
-            blockquote
-              | Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
-            span.text-content__author Martin Golding
-    .footer__bot
-      .copyright
-        small.copyright__text Елена Галанова | создано с любовью в Loftschool | 2018
+        .footer-info__col
+          p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer-info__col
+          nav.menu.menu--view--transparent.footer-info__menu
+            ul.menu__list
+              li.menu__item
+                a.menu__link(href='works.html' type='button') Мои работы
+              li.menu__item
+                a.menu__link(href='about.html' type='button') Обо мне
+              li.menu__item
+                a.menu__link(href='blog.html' type='button') Блог
+              li.menu__item
+                a.menu__link(href='auth.html' type='button') Авторизация
+            ul.socials__list
+              li.socials__item
+                a.socials__link(href='//vk.com', target='_blank')
+                  svg.socials__icon
+                    use(xlink:href='./assets/images/icons/sprite.svg#vk')
+              li.socials__item
+                a.socials__link(href='//github.com', target='_blank')
+                  svg.socials__icon
+                    use(xlink:href='./assets/images/icons/sprite.svg#github')
+              li.socials__item
+                a.socials__link(href='//linkedin.com', target='_blank')
+                  svg.socials__icon
+                    use(xlink:href='./assets/images/icons/sprite.svg#in')
+        .footer-info__col.text-content
+          blockquote
+            | Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+          cite.text-content__author Martin Golding
+      .footer__bot
+        .copyright__text Елена Галанова | создано с любовью в Loftschool | 2018
 
