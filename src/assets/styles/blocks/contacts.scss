@@ -1,6 +1,6 @@
 .contacts {
 	padding: 35px 40px 30px;
-	background-color: rgba($white, .85);
+	background-color: rgba(white, .85);
 	border-radius: 5px;
 }
 
@@ -21,13 +21,13 @@
 }
 
 .contacts__item-icon-img {
-	fill: $green;
+	fill: #81aa70;
 	width: 100%;
 	height: 100%;
 }
 
 .contacts__item-title {
-	color: $text-color;
+	color: #545a5c;
 	display: inline-block;
 	font-weight: 500;
 	text-decoration: none;
