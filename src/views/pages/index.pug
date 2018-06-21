@@ -1,0 +1,39 @@
+extends ../auth.layout.pug
+
+block content
+    .main-section
+        .container
+            header.header
+                    button.btn.btn--view--rounded(tabindex='1') Авторизоваться                        
+            .center-block
+                    .welcome__box
+                        .user.welcome__user
+                            .user__photo(style="background-image: url('./assets/images/photo.jpg');")
+                            .user__description
+                                .user__title Галанова Елена
+                                .user__text Личный сайт веб-разработчика
+                            .socials.socials--view--transparent.socials--color--green.welcome__social
+                                ul.socials__list
+                                    li.socials__item
+                                        a.socials__link(href='//vk.com', target='_blank', type='button')
+                                            svg.socials__icon
+                                                use(xlink:href='./assets/images/icons/sprite.svg#vk')
+                                    li.socials__item
+                                        a.socials__link(href='//github.com', target='_blank', type='button')
+                                            svg.socials__icon
+                                                use(xlink:href='./assets/images/icons/sprite.svg#github')
+                                    li.socials__item
+                                        a.socials__link(href='//linkedin.com', target='_blank', type='button')
+                                            svg.socials__icon
+                                                use(xlink:href='./assets/images/icons/sprite.svg#in')
+                                nav.menu.welcome__menu
+                                    ul.menu__list
+                                        li.menu__item
+                                            a.menu__link(href='works.html', type='button') Мои работы
+                                        li.menu__item
+                                            a.menu__link(href='about.html', type='button') Обо мне
+                                        li.menu__item
+                                            a.menu__link(href='blog.html', type='button') Блог
+        footer.footer.footer--bg--transparent
+            .copyright__text Елена Галанова | создано с любовью в Loftschool | 2018
+   
